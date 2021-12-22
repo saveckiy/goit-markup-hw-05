@@ -56,9 +56,15 @@
         <section class="hero-box">
             <div class="container">
                 <h1 class="slogan-box">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="button"> Заказать услугу</button>
+                <button type="button" class="button" data-modal-open> Заказать услугу</button>
             </div>
-            
+            <div data-modal>
+                <button data-modal-close>
+                    <svg>
+                        <use href="./img/closed.svg#icon-Vector-1"></use>
+                    </svg>
+                </button>
+            </div>
         </section>
         
         <!-- Инструменты работы -->
@@ -407,7 +413,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="./js/modal.js"></script>
 </body>
 </html>
 

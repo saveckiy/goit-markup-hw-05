@@ -110,6 +110,7 @@ h2{
         font-size: 14px;
         line-height: 1.1;
         letter-spacing: 0.02em;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
 
@@ -149,6 +150,7 @@ h2{
         letter-spacing: 0.02em;
         color: var(--text-secondary); 
         display: inline-flex;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .link-box_mail:hover .card-icon,
@@ -205,6 +207,7 @@ h2{
         color: #FFFFFF;
         margin: auto;
         display: block;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
 
     .button:hover{
@@ -233,8 +236,8 @@ h2{
         display: flex;
         align-items: center;
         justify-content: center;
-        
     }
+
     .work-tools-icon{
         display: flex;
         align-items: center;
@@ -363,10 +366,12 @@ h2{
         width: 44px;
         height: 44px;
         border-radius: 50%;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .social-icon{
         fill: #AFB1B8;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
 
@@ -396,6 +401,7 @@ h2{
         align-items: center;
         border: 1px solid #AFB1B8;
         border-radius: 4px;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .customer-link:focus,
     .customer-link:hover{
@@ -538,6 +544,7 @@ h2{
         background: #F5F4FA;
         border-radius: 4px;
         border: none;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .button-portfolio:hover,
     .button-portfolio:focus {
@@ -586,6 +593,9 @@ h2{
         position: relative;
         overflow: hidden;
     }
+    .description{
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
     .description-text{
         width: 100%;
         height: 100%;
@@ -602,7 +612,7 @@ h2{
         color: #FFFFFF;
         padding: 24px 63px;
         transform: translateY(100%);
-        transition: transform250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .description:hover .description-text {
         transform: translateY(0);
