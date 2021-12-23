@@ -58,12 +58,14 @@
                 <h1 class="slogan-box">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="button" data-modal-open> Заказать услугу</button>
             </div>
-            <div data-modal>
-                <button data-modal-close>
-                    <svg>
-                        <use href="./img/closed.svg#icon-Vector-1"></use>
-                    </svg>
-                </button>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="closet-button" type="button" data-modal-close>
+                        <svg class="closed-icon">
+                            <use href="./img/closed.svg#icon-Vector-1"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </section>
         
@@ -119,18 +121,46 @@
                 <h2>Чем мы занимаемся</h2>
                 <div class="specification-box">
                     <ul class="specification-list">
-                        <li class="specification-item"><img src="./img/box1.jpg"
-                            alt="Наша-спецификация-1"
-                            width="370"
-                            height="294"></li>
-                        <li class="specification-item"><img src="./img/box2.jpg" 
-                            alt="Наша-спецификация-2"
-                            width="370"
-                            height="294"></li>
-                        <li class="specification-item"><img src="./img/box3.jpg" 
-                            alt="Наша-спецификация-3"
-                            width="370"
-                            height="294"></li>
+
+                        <li class="specification-item">
+                            <div>
+                                <img src="./img/box1.jpg"
+                                alt="Наша-спецификация-1"
+                                width="370"
+                                height="294">
+                            </div>
+
+                            <div class="specification-text">
+                                <p>Десктопные приложения</p>
+                            </div>
+                        </li>
+
+                        <li class="specification-item">
+                            <div>
+                                <img src="./img/box2.jpg" 
+                                alt="Наша-спецификация-2"
+                                width="370"
+                                height="294">
+                            </div>
+
+                            <div class="specification-text">
+                                <p>Мобильные приложения</p>
+                            </div>
+                        </li>
+
+                        <li class="specification-item">
+                            <div>
+                                <img src="./img/box3.jpg" 
+                                alt="Наша-спецификация-3"
+                                width="370"
+                                height="294">
+                            </div>
+                            
+                            <div class="specification-text">
+                                <p>Дизайнерские решения</p>
+                            </div>
+                        </li>
+
                     </ul>    
                 </div>
             </div>
