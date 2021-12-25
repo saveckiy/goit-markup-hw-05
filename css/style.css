@@ -228,11 +228,12 @@ h2{
         left: 0px;
         top: 0px;
         background: rgba(0, 0, 0, 0.2);
-
+        z-index: 1;
         opacity: 1;
         visibility: visible;
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+
     
     .modal{
         position: absolute;
@@ -246,7 +247,7 @@ h2{
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px; 
     }
-    .closet-button{
+    .close-button{
         width: 30px;
         height: 30px;
         left: 1026px;
@@ -258,19 +259,24 @@ h2{
         border-radius: 50%;
         box-sizing: border-box;
     }
-    .closed-icon{
+    
+    .close-icon{
         left: 22.22%;
         right: 16.67%;
         top: 16.67%;
         bottom: 22.22%;
         width: 9px;
         height: 9px;
-
+        
         fill: #000000;
     }
-  
-        /* Стилизирование инструментов работы */
-
+    
+    .close-button:hover .close-icon,
+    .close-button:focus .close-icon {
+        fill: #2196F3;
+    }
+    /* Стилизирование инструментов работы */
+    
     .work-tools{ 
         padding-bottom: 94px;
         padding-top: 94px;
@@ -522,10 +528,12 @@ h2{
         display: flex;
         font-style: normal;
         font-weight: 400;
+        font-size: 14px;
         line-height: 1.7;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
         }
+        
 
     .nav-footer{
         margin-right: 70px;
